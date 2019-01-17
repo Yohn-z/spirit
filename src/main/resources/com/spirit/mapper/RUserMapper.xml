@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spirit.mapper.RUserMapper" >
+  <resultMap id="BaseResultMap" type="com.spirit.pojo.RUser" >
+    <id column="u_id" property="uId" jdbcType="BIGINT" />
+    <result column="u_name" property="uName" jdbcType="VARCHAR" />
+    <result column="u_pass" property="uPass" jdbcType="VARCHAR" />
+    <result column="u_role" property="uRole" jdbcType="INTEGER" />
+    <result column="u_status" property="uStatus" jdbcType="INTEGER" />
+    <result column="u_creat_time" property="uCreatTime" jdbcType="VARCHAR" />
+    <result column="u_last_time" property="uLastTime" jdbcType="VARCHAR" />
+    <result column="u_ip" property="uIp" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    u_id, u_name, u_pass, u_role, u_status, u_creat_time, u_last_time, u_ip
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.spirit.pojo.RUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from r_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from r_user
+    where u_id = #{uId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from r_user
+    where u_id = #{uId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.spirit.pojo.RUserExample" >
+    delete from r_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.spirit.pojo.RUser" >
+    insert into r_user (u_id, u_name, u_pass, 
+      u_role, u_status, u_creat_time, 
+      u_last_time, u_ip)
+    values (#{uId,jdbcType=BIGINT}, #{uName,jdbcType=VARCHAR}, #{uPass,jdbcType=VARCHAR}, 
+      #{uRole,jdbcType=INTEGER}, #{uStatus,jdbcType=INTEGER}, #{uCreatTime,jdbcType=VARCHAR}, 
+      #{uLastTime,jdbcType=VARCHAR}, #{uIp,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.spirit.pojo.RUser" >
+    insert into r_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        u_id,
+      </if>
+      <if test="uName != null" >
+        u_name,
+      </if>
+      <if test="uPass != null" >
+        u_pass,
+      </if>
+      <if test="uRole != null" >
+        u_role,
+      </if>
+      <if test="uStatus != null" >
+        u_status,
+      </if>
+      <if test="uCreatTime != null" >
+        u_creat_time,
+      </if>
+      <if test="uLastTime != null" >
+        u_last_time,
+      </if>
+      <if test="uIp != null" >
+        u_ip,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        #{uId,jdbcType=BIGINT},
+      </if>
+      <if test="uName != null" >
+        #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPass != null" >
+        #{uPass,jdbcType=VARCHAR},
+      </if>
+      <if test="uRole != null" >
+        #{uRole,jdbcType=INTEGER},
+      </if>
+      <if test="uStatus != null" >
+        #{uStatus,jdbcType=INTEGER},
+      </if>
+      <if test="uCreatTime != null" >
+        #{uCreatTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uLastTime != null" >
+        #{uLastTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uIp != null" >
+        #{uIp,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.spirit.pojo.RUserExample" resultType="java.lang.Integer" >
+    select count(*) from r_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update r_user
+    <set >
+      <if test="record.uId != null" >
+        u_id = #{record.uId,jdbcType=BIGINT},
+      </if>
+      <if test="record.uName != null" >
+        u_name = #{record.uName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.uPass != null" >
+        u_pass = #{record.uPass,jdbcType=VARCHAR},
+      </if>
+      <if test="record.uRole != null" >
+        u_role = #{record.uRole,jdbcType=INTEGER},
+      </if>
+      <if test="record.uStatus != null" >
+        u_status = #{record.uStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.uCreatTime != null" >
+        u_creat_time = #{record.uCreatTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.uLastTime != null" >
+        u_last_time = #{record.uLastTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.uIp != null" >
+        u_ip = #{record.uIp,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update r_user
+    set u_id = #{record.uId,jdbcType=BIGINT},
+      u_name = #{record.uName,jdbcType=VARCHAR},
+      u_pass = #{record.uPass,jdbcType=VARCHAR},
+      u_role = #{record.uRole,jdbcType=INTEGER},
+      u_status = #{record.uStatus,jdbcType=INTEGER},
+      u_creat_time = #{record.uCreatTime,jdbcType=VARCHAR},
+      u_last_time = #{record.uLastTime,jdbcType=VARCHAR},
+      u_ip = #{record.uIp,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.spirit.pojo.RUser" >
+    update r_user
+    <set >
+      <if test="uName != null" >
+        u_name = #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPass != null" >
+        u_pass = #{uPass,jdbcType=VARCHAR},
+      </if>
+      <if test="uRole != null" >
+        u_role = #{uRole,jdbcType=INTEGER},
+      </if>
+      <if test="uStatus != null" >
+        u_status = #{uStatus,jdbcType=INTEGER},
+      </if>
+      <if test="uCreatTime != null" >
+        u_creat_time = #{uCreatTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uLastTime != null" >
+        u_last_time = #{uLastTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uIp != null" >
+        u_ip = #{uIp,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where u_id = #{uId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.spirit.pojo.RUser" >
+    update r_user
+    set u_name = #{uName,jdbcType=VARCHAR},
+      u_pass = #{uPass,jdbcType=VARCHAR},
+      u_role = #{uRole,jdbcType=INTEGER},
+      u_status = #{uStatus,jdbcType=INTEGER},
+      u_creat_time = #{uCreatTime,jdbcType=VARCHAR},
+      u_last_time = #{uLastTime,jdbcType=VARCHAR},
+      u_ip = #{uIp,jdbcType=VARCHAR}
+    where u_id = #{uId,jdbcType=BIGINT}
+  </update>
+</mapper>

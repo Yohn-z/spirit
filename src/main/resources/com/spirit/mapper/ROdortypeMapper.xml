@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spirit.mapper.ROdortypeMapper" >
+  <resultMap id="BaseResultMap" type="com.spirit.pojo.ROdortype" >
+    <id column="o_id" property="oId" jdbcType="BIGINT" />
+    <result column="o_text" property="oText" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    o_id, o_text
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.spirit.pojo.ROdortypeExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from r_odortype
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from r_odortype
+    where o_id = #{oId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from r_odortype
+    where o_id = #{oId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.spirit.pojo.ROdortypeExample" >
+    delete from r_odortype
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.spirit.pojo.ROdortype" >
+    insert into r_odortype (o_id, o_text)
+    values (#{oId,jdbcType=BIGINT}, #{oText,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.spirit.pojo.ROdortype" >
+    insert into r_odortype
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="oId != null" >
+        o_id,
+      </if>
+      <if test="oText != null" >
+        o_text,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="oId != null" >
+        #{oId,jdbcType=BIGINT},
+      </if>
+      <if test="oText != null" >
+        #{oText,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.spirit.pojo.ROdortypeExample" resultType="java.lang.Integer" >
+    select count(*) from r_odortype
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update r_odortype
+    <set >
+      <if test="record.oId != null" >
+        o_id = #{record.oId,jdbcType=BIGINT},
+      </if>
+      <if test="record.oText != null" >
+        o_text = #{record.oText,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update r_odortype
+    set o_id = #{record.oId,jdbcType=BIGINT},
+      o_text = #{record.oText,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.spirit.pojo.ROdortype" >
+    update r_odortype
+    <set >
+      <if test="oText != null" >
+        o_text = #{oText,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where o_id = #{oId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.spirit.pojo.ROdortype" >
+    update r_odortype
+    set o_text = #{oText,jdbcType=VARCHAR}
+    where o_id = #{oId,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
+
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendor/linearicons/style.css">
+	<!-- Toastr-->
+	<link rel="stylesheet" href="../css/toastr/toastr.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+	<!-- fakeloader css -->
+	<link href="../fakeloader/fakeloader.css" rel="stylesheet">
+
+	<!-- jQuery Js -->
+	<script src="../js/jquery/jquery.3.2.1.min.js"></script>
+	<script src="../fakeloader/fakeloader.min.js"></script>
+
+</head>
+
+<body ng-app="spirit" ng-controller="loginController" ng-init="user={}">
+<!--
+	<div class="fakeloader"></div>
+	<script>
+            $(".fakeloader").fakeLoader({
+                timeToHide:1000,
+                bgColor:"#fff",
+                spinner:"spinner3"
+            });
+
+	</script>-->
+
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<div class="vertical-align-wrap">
+			<div class="vertical-align-middle">
+				<div class="auth-box ">
+					<div class="left">
+						<div class="content">
+							<form class="form-auth-small">
+								<div class="form-group">
+									<input type="username" class="form-control" id="signin-username"  placeholder="用户名" ng-model="user.uName">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="signin-password"  placeholder="密码" ng-model="user.uPass">
+								</div>
+								<div class="form-group clearfix">
+									<label class="fancy-checkbox element-left">
+										<input type="checkbox">
+										<span>记住账号</span>
+									</label>
+								</div>
+								<Button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="login()">登录</Button>
+								<div class="bottom">
+									<span class="helper-text"><i class="fa"></i> <a href="../reg">前往注册</a></span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+						<div class="overlay"></div>
+						<div class="content text">
+							<h1 class="heading">登录</h1>
+							<p>login for white spirit manage system</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WRAPPER -->
+	<!-- JS Scripts-->
+
+	<!-- Bootstrap Js -->
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<!-- Metis Menu Js -->
+	<script src="../js/jquery/jquery.metisMenu.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../js/bootstrap/custom-scripts.js"></script>
+
+	<!-- Angular js -->
+	<script type="text/javascript" src="../js/angularjs/plugs/angular.min.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/base.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/service/loginService.js"></script>
+	<script type="text/javascript" src="../js/angularjs/controller/loginController.js"></script>
+
+
+
+
+	<!-- Toastr.js -->
+	<script src="../js/toastr/toastr.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
+
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendor/linearicons/style.css">
+	<!-- Toastr-->
+	<link rel="stylesheet" href="../css/toastr/toastr.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body ng-app="spirit" ng-controller="loginController" ng-init="user={}">
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<div class="vertical-align-wrap">
+			<div class="vertical-align-middle">
+				<div class="auth-box ">
+					<div class="left">
+						<div class="content">
+							<form class="form-auth-small">
+								<div class="form-group">
+									<input type="username" class="form-control" id="signin-username"  placeholder="用户名" ng-model="user.uName">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="signin-password"  placeholder="密码" ng-model="user.uPass">
+								</div>
+								<div class="form-group clearfix">
+								</div>
+								<Button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="reg()">注册</Button>
+								<div class="bottom">
+									<span class="helper-text"><i class="fa"></i> <a href="../">前往登录</a></span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+						<div class="overlay"></div>
+						<div class="content text">
+							<h1 class="heading">注册</h1>
+							<p>register for white spirit manage system</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WRAPPER -->
+	<!-- JS Scripts-->
+	<!-- jQuery Js -->
+	<script src="../js/jquery/jquery.3.2.1.min.js"></script>
+	<!-- Bootstrap Js -->
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Js -->
+	<script src="../js/jquery/jquery.metisMenu.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../js/bootstrap/custom-scripts.js"></script>
+
+	<!-- Angular js -->
+	<script type="text/javascript" src="../js/angularjs/plugs/angular.min.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/base.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/service/loginService.js"></script>
+	<script type="text/javascript" src="../js/angularjs/controller/loginController.js"></script>
+
+	<!-- 分页组件开始 -->
+	<script src="../js/angularjs/plugs/pagination.js"></script>
+	<link rel="stylesheet" href="../js/angularjs/plugs/pagination.css">
+
+	<!-- Toastr.js -->
+	<script src="../js/toastr/toastr.js"></script>
+
+</body>
+
+</html>

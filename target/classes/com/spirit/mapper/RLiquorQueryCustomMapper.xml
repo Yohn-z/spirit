@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spirit.mapper.RLiquorQueryCustomMapper">
+
+    <!-- sql片段 -->
+    <!-- 查询条件 通常情况，为了提高 sql片段可重用性，按单表创建sql片段 -->
+    <sql id="query_Liquor_where">
+        <if test="queryEntity!=null">
+            <if test="queryEntity.isSeal != 3 ">
+                and lQuery.ldSeal = #{queryEntity.isSeal}
+            </if>
+            <if test="queryEntity.name!=null and queryEntity.name!=''">
+                and lQuery.lName like '%${queryEntity.name}%'
+            </if>
+            <if test="queryEntity.oId!=null and queryEntity.oId!=0">
+                and lQuery.oId = #{queryEntity.oId,jdbcType=BIGINT}
+            </if>
+            <if test="queryEntity.mId!=null and queryEntity.mId!=0">
+                and lQuery.mId = #{queryEntity.mId,jdbcType=BIGINT}
+            </if>
+            <if test="queryEntity.minCapacity!=null and queryEntity.maxCapacity!=null and queryEntity.minCapacity!=0 and queryEntity.maxCapacity!=0">
+                and lQuery.lCapacity between #{queryEntity.minCapacity} and #{queryEntity.maxCapacity}
+            </if>
+            <if test="queryEntity.minCapacity!=null and queryEntity.minCapacity!=0">
+                and lQuery.lCapacity &gt;= #{queryEntity.minCapacity}
+            </if>
+            <if test="queryEntity.maxCapacity!=null and queryEntity.maxCapacity!=0">
+
+                and lQuery.lCapacity &lt;= #{queryEntity.maxCapacity}
+
+            </if>
+            <if test="queryEntity.minDegrees!=null and queryEntity.maxDegrees!=null and queryEntity.minDegrees!=0.0 and queryEntity.maxDegrees!=0.0">
+                and lQuery.lDegrees between #{queryEntity.minDegrees} and #{queryEntity.maxDegrees}
+            </if>
+            <if test="queryEntity.minDegrees!=null and queryEntity.minDegrees!=0.0">
+
+                and lQuery.lDegrees &gt;= #{queryEntity.minDegrees}
+
+            </if>
+            <if test="queryEntity.maxDegrees!=null and queryEntity.maxDegrees!=0.0">
+
+                and lQuery.lDegrees &lt;= #{queryEntity.maxDegrees}
+
+            </if>
+            <if test="queryEntity.minPrice!=null and queryEntity.maxPrice!=null and queryEntity.minPrice!=0.0 and queryEntity.maxPrice!=0.0">
+                and lQuery.ldPrice between #{queryEntity.minPrice} and #{queryEntity.maxPrice}
+            </if>
+            <if test="queryEntity.minPrice!=null and queryEntity.minPrice!=0.0">
+
+                and lQuery.ldPrice &gt;= #{queryEntity.minPrice}
+
+            </if>
+            <if test="queryEntity.maxPrice!=null and queryEntity.maxPrice!=0.0">
+
+                and lQuery.ldPrice &lt;= #{queryEntity.maxPrice}
+
+            </if>
+            <if test="queryEntity.minWeight!=null and queryEntity.maxWeight!=null and queryEntity.minWeight!=0 and queryEntity.maxWeight!=0">
+                and lQuery.lWeight between #{queryEntity.minWeight} and #{queryEntity.maxWeight}
+            </if>
+            <if test="queryEntity.minWeight!=null and queryEntity.minWeight!=0">
+
+                and lQuery.lWeight &gt;= #{queryEntity.minWeight}
+
+            </if>
+            <if test="queryEntity.maxWeight!=null and queryEntity.maxWeight!=0">
+
+                and lQuery.lWeight &lt;= #{queryEntity.maxWeight}
+
+            </if>
+            <if test="queryEntity.minTime!= null and queryEntity.minTime!='' and queryEntity.maxTime!= null and queryEntity.maxTime!=''">
+                and lQuery.lProducedtime between str_to_date(#{queryEntity.minTime},'%Y-%m-%d') and str_to_date(#{queryEntity.maxTime},'%Y-%m-%d')
+            </if>
+            <if test="queryEntity.minTime!='' and queryEntity.minTime!=null">
+
+                and lQuery.lProducedtime &gt;= str_to_date(#{queryEntity.minTime},'%Y-%m-%d')
+
+            </if>
+            <if test="queryEntity.maxTime!='' and queryEntity.maxTime!= null">
+
+                and lQuery.lProducedtime &lt;= str_to_date(#{queryEntity.maxTime},'%Y-%m-%d')
+
+            </if>
+        </if>
+
+    </sql>
+
+    <!-- 白酒查询 -->
+    <select id="findLiquorList" parameterType="com.spirit.pojo.vo.LQueryVo"
+            resultType="com.spirit.pojo.RLiquorCustom">
+
+        SELECT *
+        FROM
+        (SELECT
+        l.l_id AS lId,
+        l.l_name AS lName,
+        l.o_id AS oId,
+        l.l_degrees AS lDegrees,
+        l.l_capacity AS lCapacity,
+        l.l_weight AS lWeight,
+        l.l_num AS lNum,
+        l.l_producedtime AS lProducedtime,
+        ld.ld_price AS ldPrice,
+        ld.m_id AS mId,
+        ld.ld_channels AS ldChannels,
+        ld.ld_seal AS ldSeal,
+        ld.ld_before AS ldBefore,
+        ld.ld_back AS ldBack,
+        ld.ld_top AS ldTop,
+        ld.ld_addtime AS ldAddtime,
+        ld.ld_text AS ldText,
+        o.o_text AS oText,
+        m.m_name AS mName
+        FROM
+        r_liquor AS l ,
+        r_liquordesc AS ld ,
+        r_manufacturers AS m ,
+        r_odortype AS o
+        WHERE
+        l.l_id = ld.l_id and
+        l.o_id = o.o_id and
+        ld.m_id = m.m_id) lQuery
+        <where>
+            <include refid="query_Liquor_where" />
+        </where>
+        order by
+        ldAddtime
+        desc
+    </select>
+
+
+
+</mapper>

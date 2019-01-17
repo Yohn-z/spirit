@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>收藏概况</title>
+<!-- Bootstrap Styles-->
+<link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<!-- FontAwesome Styles-->
+<link href="../assets/css/font-awesome.css" rel="stylesheet" />
+<!-- Morris Chart Styles-->
+<link href="../css/morris/morris-0.4.3.min.css" rel="stylesheet" />
+<!-- Custom Styles-->
+<link href="../css/bootstrap/custom-styles.css" rel="stylesheet" />
+<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+<!-- Toastr-->
+<link rel="stylesheet" href="../css/toastr/toastr.css">
+<!-- fakeloader css -->
+<link href="../fakeloader/fakeloader.css" rel="stylesheet">
+<!-- jQuery Js -->
+<script src="../js/jquery/jquery.3.2.1.min.js"></script>
+<script src="../fakeloader/fakeloader.min.js"></script>
+
+
+</head>
+
+<body  ng-app="spirit" ng-controller="staController" ng-init="isLogin()">
+	<div class="fakeloader"></div>
+	<script>
+            $(".fakeloader").fakeLoader({
+                timeToHide:300,
+                bgColor:"#fff",
+                spinner:"spinner3"
+            });
+	</script>
+
+	<div id="wrapper">
+		<nav class="navbar navbar-default top-navbar" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><i
+					class="fa fa-bitbucket"></i> <strong>白酒收藏管理系统</strong></a>
+			</div>
+
+			<ul class="nav navbar-top-links navbar-right">
+
+
+				<!-- /.dropdown -->
+
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#" aria-expanded="false"> <i
+						class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i>当前在线：{{nuser.uName}}</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal_modify_pass"><i class="fa fa-gear fa-fw"></i> 修改密码</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="../"><i class="fa fa-sign-out fa-fw"></i>注销</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+				<!-- /.dropdown -->
+			</ul>
+		</nav>
+		<!--/. NAV TOP  -->
+		<nav class="navbar-default navbar-side" role="navigation">
+			<div id="sideNav" href="">
+				<i class="fa fa-caret-right"></i>
+			</div>
+			<div class="sidebar-collapse">
+				<ul class="nav" id="main-menu" style="background-color: #333;">
+					<li><a href="/c" class="active-menu" ><i class="fa fa-sitemap"></i>收藏概况</a>
+					</li>
+					<li><a ng-if="nuser.uRole == 1" href="/u" ><i class="fa fa-sitemap"></i>用户管理</a>
+					</li>
+					<li><a href="/m" ><i class="fa fa-sitemap"></i>厂商管理</a>
+					</li>
+					<li><a  href="/o"><i class="fa fa-desktop"></i>香型管理</a>
+					</li>
+					<li><a href="/s"><i class="fa fa-bar-chart-o"></i>白酒管理</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</nav>
+		<!-- /. NAV SIDE  -->
+
+
+		<div id="page-wrapper">
+            <div id="page-inner">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="page-header">
+								<small>酒库概况</small>
+							</h1>
+						</div>
+					</div>
+				</div>
+			<div class="panel panel-heading">
+				<div class="panel-heading">
+					<h3 class="panel-title">统计图表</h3>
+					<p class="panel-subtitle" id="mytime"></p>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-9">
+							<div id="firCharts" ></div>
+						</div>
+						<div class="col-md-3" ng-init="getBaseParam()">
+							<div class="weekly-summary text-right">
+								<span class="number" ng-bind="baseParam.totalTypesNum"></span>
+								<span class="info-label">种</span>
+							</div>
+							<div ng-if="nuser.uRole == 1" class="weekly-summary text-right">
+								<span class="number" ng-bind="baseParam.totalAssets"></span>
+								<span class="info-label">元</span>
+							</div>
+							<div class="weekly-summary text-right">
+								<span class="number" ng-bind="baseParam.totalLitre"></span>
+								<span class="info-label">升</span>
+							</div>
+							<div class="weekly-summary text-right">
+								<span class="number" ng-bind="baseParam.totalVaseNum"></span>
+								<span class="info-label">瓶</span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="pieCharts"></div>
+						</div>
+						<div class="col-md-6">
+							<div id="yearCharts"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<p>
+					淮海工学院 网络161 <a href="#" target="_blank" title="#">@D5 218</a>
+				</p>
+			</footer>
+			<!-- /. PAGE INNER  -->
+		</div>
+		</div>
+		<!-- /. PAGE WRAPPER  -->
+	</div>
+	<!-- /. WRAPPER  -->
+
+
+	<!-- Model  modify pass-->
+	<div class="modal fade" id="myModal_modify_pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" >修改密码</h4>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered table-striped" width="800px">
+						<tr>
+							<td>原密码</td>
+							<td><input type="password" class="form-control" placeholder="原密码" ng-model="oPass"/></td>
+						</tr>
+						<tr>
+							<td>新密码</td>
+							<td><input type="password" class="form-control" placeholder="新密码" ng-model="nPass"/></td>
+						</tr>
+						<tr>
+							<td>厂商电话</td>
+							<td><input type="password" class="form-control" placeholder="确认新密码" ng-model="nConfirmPass"/></td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+					<button type="button" class="btn btn-primary" ng-click="modifyPass()">确认修改</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JS Scripts-->
+
+	<!-- Angular js -->
+	<script type="text/javascript" src="../js/angularjs/plugs/angular.min.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/base.js"></script>
+
+	<script type="text/javascript" src="../js/angularjs/service/loginService.js"></script>
+	<script type="text/javascript" src="../js/angularjs/service/staService.js"></script>
+	<script type="text/javascript" src="../js/angularjs/controller/staController.js"></script>
+
+
+
+
+	<!-- Bootstrap Js -->
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Js -->
+	<script src="../js/jquery/jquery.metisMenu.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../js/bootstrap/custom-scripts.js"></script>
+
+	<!-- Time JS -->
+	<script src="../js/angularjs/time.js"></script>
+
+	<!-- HightCharts JS -->
+	<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+
+	<!-- Toastr.js -->
+	<script src="../js/toastr/toastr.js"></script>
+
+
+
+
+
+</body>
+
+</html>

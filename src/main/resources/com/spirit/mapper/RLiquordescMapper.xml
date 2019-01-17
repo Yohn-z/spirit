@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spirit.mapper.RLiquordescMapper" >
+  <resultMap id="BaseResultMap" type="com.spirit.pojo.RLiquordesc" >
+    <id column="l_id" property="lId" jdbcType="VARCHAR" />
+    <result column="ld_price" property="ldPrice" jdbcType="DOUBLE" />
+    <result column="m_id" property="mId" jdbcType="BIGINT" />
+    <result column="ld_channels" property="ldChannels" jdbcType="VARCHAR" />
+    <result column="ld_seal" property="ldSeal" jdbcType="INTEGER" />
+    <result column="ld_before" property="ldBefore" jdbcType="VARCHAR" />
+    <result column="ld_back" property="ldBack" jdbcType="VARCHAR" />
+    <result column="ld_top" property="ldTop" jdbcType="VARCHAR" />
+    <result column="ld_addtime" property="ldAddtime" jdbcType="VARCHAR" />
+    <result column="ld_text" property="ldText" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    l_id, ld_price, m_id, ld_channels, ld_seal, ld_before, ld_back, ld_top, ld_addtime, 
+    ld_text
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.spirit.pojo.RLiquordescExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from r_liquordesc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from r_liquordesc
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from r_liquordesc
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.spirit.pojo.RLiquordescExample" >
+    delete from r_liquordesc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.spirit.pojo.RLiquordesc" >
+    insert into r_liquordesc (l_id, ld_price, m_id, 
+      ld_channels, ld_seal, ld_before, 
+      ld_back, ld_top, ld_addtime, 
+      ld_text)
+    values (#{lId,jdbcType=VARCHAR}, #{ldPrice,jdbcType=DOUBLE}, #{mId,jdbcType=BIGINT}, 
+      #{ldChannels,jdbcType=VARCHAR}, #{ldSeal,jdbcType=INTEGER}, #{ldBefore,jdbcType=VARCHAR}, 
+      #{ldBack,jdbcType=VARCHAR}, #{ldTop,jdbcType=VARCHAR}, #{ldAddtime,jdbcType=VARCHAR}, 
+      #{ldText,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.spirit.pojo.RLiquordesc" >
+    insert into r_liquordesc
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="lId != null" >
+        l_id,
+      </if>
+      <if test="ldPrice != null" >
+        ld_price,
+      </if>
+      <if test="mId != null" >
+        m_id,
+      </if>
+      <if test="ldChannels != null" >
+        ld_channels,
+      </if>
+      <if test="ldSeal != null" >
+        ld_seal,
+      </if>
+      <if test="ldBefore != null" >
+        ld_before,
+      </if>
+      <if test="ldBack != null" >
+        ld_back,
+      </if>
+      <if test="ldTop != null" >
+        ld_top,
+      </if>
+      <if test="ldAddtime != null" >
+        ld_addtime,
+      </if>
+      <if test="ldText != null" >
+        ld_text,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="lId != null" >
+        #{lId,jdbcType=VARCHAR},
+      </if>
+      <if test="ldPrice != null" >
+        #{ldPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="mId != null" >
+        #{mId,jdbcType=BIGINT},
+      </if>
+      <if test="ldChannels != null" >
+        #{ldChannels,jdbcType=VARCHAR},
+      </if>
+      <if test="ldSeal != null" >
+        #{ldSeal,jdbcType=INTEGER},
+      </if>
+      <if test="ldBefore != null" >
+        #{ldBefore,jdbcType=VARCHAR},
+      </if>
+      <if test="ldBack != null" >
+        #{ldBack,jdbcType=VARCHAR},
+      </if>
+      <if test="ldTop != null" >
+        #{ldTop,jdbcType=VARCHAR},
+      </if>
+      <if test="ldAddtime != null" >
+        #{ldAddtime,jdbcType=VARCHAR},
+      </if>
+      <if test="ldText != null" >
+        #{ldText,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.spirit.pojo.RLiquordescExample" resultType="java.lang.Integer" >
+    select count(*) from r_liquordesc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update r_liquordesc
+    <set >
+      <if test="record.lId != null" >
+        l_id = #{record.lId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldPrice != null" >
+        ld_price = #{record.ldPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="record.mId != null" >
+        m_id = #{record.mId,jdbcType=BIGINT},
+      </if>
+      <if test="record.ldChannels != null" >
+        ld_channels = #{record.ldChannels,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldSeal != null" >
+        ld_seal = #{record.ldSeal,jdbcType=INTEGER},
+      </if>
+      <if test="record.ldBefore != null" >
+        ld_before = #{record.ldBefore,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldBack != null" >
+        ld_back = #{record.ldBack,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldTop != null" >
+        ld_top = #{record.ldTop,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldAddtime != null" >
+        ld_addtime = #{record.ldAddtime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ldText != null" >
+        ld_text = #{record.ldText,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update r_liquordesc
+    set l_id = #{record.lId,jdbcType=VARCHAR},
+      ld_price = #{record.ldPrice,jdbcType=DOUBLE},
+      m_id = #{record.mId,jdbcType=BIGINT},
+      ld_channels = #{record.ldChannels,jdbcType=VARCHAR},
+      ld_seal = #{record.ldSeal,jdbcType=INTEGER},
+      ld_before = #{record.ldBefore,jdbcType=VARCHAR},
+      ld_back = #{record.ldBack,jdbcType=VARCHAR},
+      ld_top = #{record.ldTop,jdbcType=VARCHAR},
+      ld_addtime = #{record.ldAddtime,jdbcType=VARCHAR},
+      ld_text = #{record.ldText,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.spirit.pojo.RLiquordesc" >
+    update r_liquordesc
+    <set >
+      <if test="ldPrice != null" >
+        ld_price = #{ldPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="mId != null" >
+        m_id = #{mId,jdbcType=BIGINT},
+      </if>
+      <if test="ldChannels != null" >
+        ld_channels = #{ldChannels,jdbcType=VARCHAR},
+      </if>
+      <if test="ldSeal != null" >
+        ld_seal = #{ldSeal,jdbcType=INTEGER},
+      </if>
+      <if test="ldBefore != null" >
+        ld_before = #{ldBefore,jdbcType=VARCHAR},
+      </if>
+      <if test="ldBack != null" >
+        ld_back = #{ldBack,jdbcType=VARCHAR},
+      </if>
+      <if test="ldTop != null" >
+        ld_top = #{ldTop,jdbcType=VARCHAR},
+      </if>
+      <if test="ldAddtime != null" >
+        ld_addtime = #{ldAddtime,jdbcType=VARCHAR},
+      </if>
+      <if test="ldText != null" >
+        ld_text = #{ldText,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.spirit.pojo.RLiquordesc" >
+    update r_liquordesc
+    set ld_price = #{ldPrice,jdbcType=DOUBLE},
+      m_id = #{mId,jdbcType=BIGINT},
+      ld_channels = #{ldChannels,jdbcType=VARCHAR},
+      ld_seal = #{ldSeal,jdbcType=INTEGER},
+      ld_before = #{ldBefore,jdbcType=VARCHAR},
+      ld_back = #{ldBack,jdbcType=VARCHAR},
+      ld_top = #{ldTop,jdbcType=VARCHAR},
+      ld_addtime = #{ldAddtime,jdbcType=VARCHAR},
+      ld_text = #{ldText,jdbcType=VARCHAR}
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </update>
+</mapper>

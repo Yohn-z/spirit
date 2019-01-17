@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/spirit/service/impl/LoginServiceImpl.java" line="33" mnemonic="1" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98d1dbdd-d2b1-4e6a-8694-626dab8ca74a" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/spirit$SpiritApplication.ic" NAME="SpiritApplication Coverage Results" MODIFIED="1543993351058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.spirit.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spirit" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RLiquor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/pojo/RLiquor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/staController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/util/TimeUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="61" selection-start-line="26" selection-start-column="39" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>css</find>
+      <find>ng-repeat</find>
+      <find>jpg</find>
+      <find>#1CC09F</find>
+      <find>main-menu</find>
+      <find>echarts</find>
+      <find>hq</find>
+      <find>重量</find>
+      <find>tooltip</find>
+      <find>spinner3</find>
+      <find>width:20%;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#ffffff</replace>
+      <replace>35%</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/pojo/RLiquor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/pojo/RLiquordesc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/FileExportController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/mapper/RLiquordescMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/util/EntityChange.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/spiritService.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/impl/ManufacturersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/impl/OdortypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/sta.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/entity/BaseParamEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/loginController.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/StatisticsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/impl/StatisticsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/mapper/ROdortypeMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/entity/OdortTypePercent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/staService.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/time.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap/custom-styles.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/entity/YearsEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/mapper/RLiquorMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/SpiritController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/util/TimeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/impl/SpiritServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/fakeloader/fakeloader.min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/reg.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/ServletInitializer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/fakeloader/fakeloader.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/SpiritService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/loginService.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/count.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/odort.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/user.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/spirit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/userController.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/odortController.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/manufacturersController.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/StatisticsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/spirit/mapper/RLiquorQueryCustomMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/manufacturers.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/spiritController.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/staController.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spirit/controller/Test.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spirit" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spirit" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="239" />
+    <option name="y" value="196" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spirit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spirit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/idea-workspace/spirit/src/main/resources/static/admin/manufacturers.html" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poidemo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.43188697" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\js\angularjs" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\js\angularjs\plugs" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\admin" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spirit.mapper" />
+      <recent name="com.spirit.util" />
+      <recent name="com.spirit.constant" />
+      <recent name="com.spirit.oss" />
+      <recent name="com.spirit.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\fakeloader" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\js\fakeloader" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\admin" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static" />
+      <recent name="D:\idea-workspace\spirit\src\main\resources\static\assets\img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SpiritApplication">
+    <configuration name="EntityChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spirit.util.EntityChange" />
+      <module name="spirit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spirit.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spirit.util.MD5Utils" />
+      <module name="spirit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spirit.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="SpiritApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spirit.SpiritApplication" />
+      <module name="spirit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spirit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spirit.controller.Test" />
+      <module name="spirit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spirit.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TimeUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spirit.util.TimeUtils" />
+      <module name="spirit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spirit.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SpiritApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spirit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spirit.SpiritApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpiritApplication" />
+      <item itemvalue="Application.SpiritApplication" />
+      <item itemvalue="Application.EntityChange" />
+      <item itemvalue="Application.MD5Utils" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TimeUtils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpiritApplication" />
+        <item itemvalue="Application.TimeUtils" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.MD5Utils" />
+        <item itemvalue="Application.EntityChange" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98d1dbdd-d2b1-4e6a-8694-626dab8ca74a" name="Default" comment="" />
+      <created>1543222820411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543222820411</updated>
+      <workItem from="1543222825383" duration="18864000" />
+      <workItem from="1543282114752" duration="28486000" />
+      <workItem from="1543316947791" duration="43000" />
+      <workItem from="1543318820098" duration="5134000" />
+      <workItem from="1543369547928" duration="10124000" />
+      <workItem from="1543385503468" duration="9068000" />
+      <workItem from="1543411165407" duration="8050000" />
+      <workItem from="1543465454097" duration="22035000" />
+      <workItem from="1543536055842" duration="18908000" />
+      <workItem from="1543568775191" duration="14900000" />
+      <workItem from="1543595792178" duration="118000" />
+      <workItem from="1543637347643" duration="10182000" />
+      <workItem from="1543657262708" duration="64000" />
+      <workItem from="1543678506905" duration="10775000" />
+      <workItem from="1543765311069" duration="704000" />
+      <workItem from="1543827550690" duration="11901000" />
+      <workItem from="1543993234437" duration="1986000" />
+      <workItem from="1544056976670" duration="895000" />
+      <workItem from="1544071276911" duration="8165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="180402000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.1748401" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="1" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info id="Structure" order="7" sideWeight="0.290146" side_tool="true" weight="0.19936034" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.3862213" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.0" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32985386" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.151357" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5761821" visible="true" weight="0.17110874" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info id="Web" order="0" sideWeight="0.50143677" side_tool="true" weight="0.19936034" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.42381787" side_tool="true" weight="0.1716418" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.31419623" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32985386" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="1" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.24739039" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32985386" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32985386" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="4" sideWeight="0.42381787" side_tool="true" weight="0.1716418" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.151357" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.31419623" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.1748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5761821" visible="true" weight="0.16950959" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info id="Web" order="0" sideWeight="0.50143677" side_tool="true" weight="0.19936034" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Structure" order="7" sideWeight="0.290146" side_tool="true" weight="0.19936034" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.3862213" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="30" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/entity/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/loginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/mapper/RLiquordescMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/entity/YearsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/mapper/RLiquorMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="88" column="27" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/fakeloader/fakeloader.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/ServletInitializer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/aop/WebLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/fakeloader/fakeloader.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="345" lean-forward="true" selection-start-column="345" selection-end-column="345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/fakeloader/fakeloader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="171" column="9" lean-forward="true" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/staService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/spiritService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/service/loginService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/odortController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/SpiritController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/SpiritService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/impl/SpiritServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/spirit/mapper/RLiquorQueryCustomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/mapper/RLiquorQueryCustomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/SpiritApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/odort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="116" column="36" lean-forward="true" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/manufacturersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1087">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/spiritController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4158">
+          <caret line="198" column="52" selection-start-line="198" selection-start-column="52" selection-end-line="198" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/constant/ConstantProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/StatisticsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/entity/OdortTypePercent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/service/impl/StatisticsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2037">
+          <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/mapper/ROdortypeMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/count.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4116">
+          <caret line="196" column="59" selection-start-line="196" selection-start-column="59" selection-end-line="196" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/StatisticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/manufacturers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="101" column="108" selection-start-line="101" selection-start-column="66" selection-end-line="101" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/spirit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="517" column="32" lean-forward="true" selection-start-line="517" selection-start-column="32" selection-end-line="517" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/util/EntityChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/controller/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/pojo/RLiquor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/angularjs/controller/staController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spirit/util/TimeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="61" selection-start-line="26" selection-start-column="39" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>spirit:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>highcharts</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.43188697" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.43188697" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spirit</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.43188697" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

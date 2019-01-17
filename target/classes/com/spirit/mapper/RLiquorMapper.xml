@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spirit.mapper.RLiquorMapper" >
+  <resultMap id="BaseResultMap" type="com.spirit.pojo.RLiquor" >
+    <id column="l_id" property="lId" jdbcType="VARCHAR" />
+    <result column="l_name" property="lName" jdbcType="VARCHAR" />
+    <result column="o_id" property="oId" jdbcType="BIGINT" />
+    <result column="l_degrees" property="lDegrees" jdbcType="REAL" />
+    <result column="l_capacity" property="lCapacity" jdbcType="INTEGER" />
+    <result column="l_weight" property="lWeight" jdbcType="INTEGER" />
+    <result column="l_num" property="lNum" jdbcType="INTEGER" />
+    <result column="l_producedtime" property="lProducedtime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    l_id, l_name, o_id, l_degrees, l_capacity, l_weight, l_num, l_producedtime
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.spirit.pojo.RLiquorExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from r_liquor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from r_liquor
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from r_liquor
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.spirit.pojo.RLiquorExample" >
+    delete from r_liquor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.spirit.pojo.RLiquor" >
+    insert into r_liquor (l_id, l_name, o_id, 
+      l_degrees, l_capacity, l_weight, 
+      l_num, l_producedtime)
+    values (#{lId,jdbcType=VARCHAR}, #{lName,jdbcType=VARCHAR}, #{oId,jdbcType=BIGINT}, 
+      #{lDegrees,jdbcType=REAL}, #{lCapacity,jdbcType=INTEGER}, #{lWeight,jdbcType=INTEGER}, 
+      #{lNum,jdbcType=INTEGER}, #{lProducedtime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.spirit.pojo.RLiquor" >
+    insert into r_liquor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="lId != null" >
+        l_id,
+      </if>
+      <if test="lName != null" >
+        l_name,
+      </if>
+      <if test="oId != null" >
+        o_id,
+      </if>
+      <if test="lDegrees != null" >
+        l_degrees,
+      </if>
+      <if test="lCapacity != null" >
+        l_capacity,
+      </if>
+      <if test="lWeight != null" >
+        l_weight,
+      </if>
+      <if test="lNum != null" >
+        l_num,
+      </if>
+      <if test="lProducedtime != null" >
+        l_producedtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="lId != null" >
+        #{lId,jdbcType=VARCHAR},
+      </if>
+      <if test="lName != null" >
+        #{lName,jdbcType=VARCHAR},
+      </if>
+      <if test="oId != null" >
+        #{oId,jdbcType=BIGINT},
+      </if>
+      <if test="lDegrees != null" >
+        #{lDegrees,jdbcType=REAL},
+      </if>
+      <if test="lCapacity != null" >
+        #{lCapacity,jdbcType=INTEGER},
+      </if>
+      <if test="lWeight != null" >
+        #{lWeight,jdbcType=INTEGER},
+      </if>
+      <if test="lNum != null" >
+        #{lNum,jdbcType=INTEGER},
+      </if>
+      <if test="lProducedtime != null" >
+        #{lProducedtime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.spirit.pojo.RLiquorExample" resultType="java.lang.Integer" >
+    select count(*) from r_liquor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update r_liquor
+    <set >
+      <if test="record.lId != null" >
+        l_id = #{record.lId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lName != null" >
+        l_name = #{record.lName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.oId != null" >
+        o_id = #{record.oId,jdbcType=BIGINT},
+      </if>
+      <if test="record.lDegrees != null" >
+        l_degrees = #{record.lDegrees,jdbcType=REAL},
+      </if>
+      <if test="record.lCapacity != null" >
+        l_capacity = #{record.lCapacity,jdbcType=INTEGER},
+      </if>
+      <if test="record.lWeight != null" >
+        l_weight = #{record.lWeight,jdbcType=INTEGER},
+      </if>
+      <if test="record.lNum != null" >
+        l_num = #{record.lNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.lProducedtime != null" >
+        l_producedtime = #{record.lProducedtime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update r_liquor
+    set l_id = #{record.lId,jdbcType=VARCHAR},
+      l_name = #{record.lName,jdbcType=VARCHAR},
+      o_id = #{record.oId,jdbcType=BIGINT},
+      l_degrees = #{record.lDegrees,jdbcType=REAL},
+      l_capacity = #{record.lCapacity,jdbcType=INTEGER},
+      l_weight = #{record.lWeight,jdbcType=INTEGER},
+      l_num = #{record.lNum,jdbcType=INTEGER},
+      l_producedtime = #{record.lProducedtime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.spirit.pojo.RLiquor" >
+    update r_liquor
+    <set >
+      <if test="lName != null" >
+        l_name = #{lName,jdbcType=VARCHAR},
+      </if>
+      <if test="oId != null" >
+        o_id = #{oId,jdbcType=BIGINT},
+      </if>
+      <if test="lDegrees != null" >
+        l_degrees = #{lDegrees,jdbcType=REAL},
+      </if>
+      <if test="lCapacity != null" >
+        l_capacity = #{lCapacity,jdbcType=INTEGER},
+      </if>
+      <if test="lWeight != null" >
+        l_weight = #{lWeight,jdbcType=INTEGER},
+      </if>
+      <if test="lNum != null" >
+        l_num = #{lNum,jdbcType=INTEGER},
+      </if>
+      <if test="lProducedtime != null" >
+        l_producedtime = #{lProducedtime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.spirit.pojo.RLiquor" >
+    update r_liquor
+    set l_name = #{lName,jdbcType=VARCHAR},
+      o_id = #{oId,jdbcType=BIGINT},
+      l_degrees = #{lDegrees,jdbcType=REAL},
+      l_capacity = #{lCapacity,jdbcType=INTEGER},
+      l_weight = #{lWeight,jdbcType=INTEGER},
+      l_num = #{lNum,jdbcType=INTEGER},
+      l_producedtime = #{lProducedtime,jdbcType=VARCHAR}
+    where l_id = #{lId,jdbcType=VARCHAR}
+  </update>
+</mapper>

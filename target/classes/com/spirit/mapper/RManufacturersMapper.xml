@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spirit.mapper.RManufacturersMapper" >
+  <resultMap id="BaseResultMap" type="com.spirit.pojo.RManufacturers" >
+    <id column="m_id" property="mId" jdbcType="BIGINT" />
+    <result column="m_name" property="mName" jdbcType="VARCHAR" />
+    <result column="m_address" property="mAddress" jdbcType="VARCHAR" />
+    <result column="m_tel" property="mTel" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    m_id, m_name, m_address, m_tel
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.spirit.pojo.RManufacturersExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from r_manufacturers
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from r_manufacturers
+    where m_id = #{mId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from r_manufacturers
+    where m_id = #{mId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.spirit.pojo.RManufacturersExample" >
+    delete from r_manufacturers
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.spirit.pojo.RManufacturers" >
+    insert into r_manufacturers (m_id, m_name, m_address, 
+      m_tel)
+    values (#{mId,jdbcType=BIGINT}, #{mName,jdbcType=VARCHAR}, #{mAddress,jdbcType=VARCHAR}, 
+      #{mTel,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.spirit.pojo.RManufacturers" >
+    insert into r_manufacturers
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="mId != null" >
+        m_id,
+      </if>
+      <if test="mName != null" >
+        m_name,
+      </if>
+      <if test="mAddress != null" >
+        m_address,
+      </if>
+      <if test="mTel != null" >
+        m_tel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="mId != null" >
+        #{mId,jdbcType=BIGINT},
+      </if>
+      <if test="mName != null" >
+        #{mName,jdbcType=VARCHAR},
+      </if>
+      <if test="mAddress != null" >
+        #{mAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="mTel != null" >
+        #{mTel,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.spirit.pojo.RManufacturersExample" resultType="java.lang.Integer" >
+    select count(*) from r_manufacturers
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update r_manufacturers
+    <set >
+      <if test="record.mId != null" >
+        m_id = #{record.mId,jdbcType=BIGINT},
+      </if>
+      <if test="record.mName != null" >
+        m_name = #{record.mName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mAddress != null" >
+        m_address = #{record.mAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mTel != null" >
+        m_tel = #{record.mTel,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update r_manufacturers
+    set m_id = #{record.mId,jdbcType=BIGINT},
+      m_name = #{record.mName,jdbcType=VARCHAR},
+      m_address = #{record.mAddress,jdbcType=VARCHAR},
+      m_tel = #{record.mTel,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.spirit.pojo.RManufacturers" >
+    update r_manufacturers
+    <set >
+      <if test="mName != null" >
+        m_name = #{mName,jdbcType=VARCHAR},
+      </if>
+      <if test="mAddress != null" >
+        m_address = #{mAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="mTel != null" >
+        m_tel = #{mTel,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where m_id = #{mId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.spirit.pojo.RManufacturers" >
+    update r_manufacturers
+    set m_name = #{mName,jdbcType=VARCHAR},
+      m_address = #{mAddress,jdbcType=VARCHAR},
+      m_tel = #{mTel,jdbcType=VARCHAR}
+    where m_id = #{mId,jdbcType=BIGINT}
+  </update>
+</mapper>
